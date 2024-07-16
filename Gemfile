@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.0.0"
+ruby "3.3.3"
 
 gem "rails", "~> 7.1.3", ">= 7.1.3.4"
 gem 'devise', '~> 4.9', '>= 4.9.4'
@@ -31,6 +31,7 @@ end
 
 group :production do
   gem 'pg', '~> 1.5', '>= 1.5.6'
+  gem 'rails_12factor', '0.0.3'
 end
 
 group :test do
